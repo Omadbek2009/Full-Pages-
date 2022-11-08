@@ -1,0 +1,108 @@
+@import '../../styles.scss';
+.main {
+    width: 100%;
+    height: 100vh;
+    @include df(center, center);
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        height: 100vh;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 100vh;
+    }
+    @media screen and (max-width: 425px) {
+        width: 100%;
+        height: 100vh;
+    }
+    @media screen and (max-width: 375px) {
+        width: 100%;
+        height: 100vh;
+    }
+    @media screen and (max-width: 320px) {
+        width: 100%;
+        height: 100vh;
+    }
+    .creat {
+        width: 25%;
+        height: 50vh;
+        border-radius: 7px;
+        box-shadow: 2px 2px 7px 5px #999;
+        @include df(center, space-around);
+        flex-direction: column;
+        @media screen and (max-width: 1024px) {
+            width: 90%;
+            height: 70vh;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 90%;
+            height: 70vh;
+        }
+        
+        @media screen and (max-width: 320px) {
+            width: 90%;
+            height: 70vh;
+        }
+
+        .btn {
+            width: 90%;
+            @include df(center, space-around);
+
+            a {
+                text-decoration: none;
+
+                button {
+                    width: 150px;
+                    @media screen and (max-width: 320px) {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+
+        input {
+            width: 85%;
+            height: 40px;
+            padding: 0 20px;
+            font-size: 17px;
+            border-radius: 7px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid #383838;
+
+            &::placeholder {
+                font-size: 18px;
+                color: #999;
+                letter-spacing: 1px;
+            }
+        }
+
+        .loginin {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+
+            h1 {
+                color: #1aa8b2;
+                transition: all .5s;
+                letter-spacing: 2px;
+                cursor: pointer;
+                b {
+                    color: #1acfdc;
+                }
+
+                &:hover {
+                    color: #1acfdc;
+
+                    b {
+                        color: #1aa8b2;
+                    }
+                }
+            }
+        }
+    }
+}
